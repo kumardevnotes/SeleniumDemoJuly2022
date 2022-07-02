@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JBDemo Suite">
+  <test name="JBDemo Regression Test">
+      <classes>
+      <class name="qa.tests.SeleniumWithTestNGIntellij"/>
+      <class name="qa.tests.SeleniumWithTestNGIntellijDuplicate"/>
+      </classes>
+  </test> <!-- Test --> 
+</suite> <!-- Suite -->
+
+
