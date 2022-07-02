@@ -10,7 +10,7 @@ public class SeleniumWithTestNGIntellij {
 
     WebDriver  driver;
 
-    @BeforeMethod //@BeforeMethod
+    @BeforeMethod (alwaysRun = true)
     public void setup(){
         // Setup chromedriver path and launch chrome
         String path = System.getProperty("user.dir");
@@ -19,35 +19,81 @@ public class SeleniumWithTestNGIntellij {
         driver.manage().window().maximize();
     }
 
-    @Test
+    @Test(groups = { "regression" })
     public  void launchGoogleSearchI() {
         try {
             // Search for results
             driver.get("https://google.co.in");
             // DOM - document object model
             Thread.sleep(1000);
-            Assert.fail("launchGoogleSearchI failed");
-
+            //Assert.fail("launchGoogleSearchI failed");
+            System.out.println("test");
         } catch (Exception e) {
             System.out.println("Caught an exception: " + e);
         }
     }
 
-    @Test
+    @Test(groups = { "smoke" })
+    public  void launchGoogleSearchII() {
+        try {
+//            // Search for results
+//            driver.get("https://google.co.in");
+//            // DOM - document object model
+//            Thread.sleep(1000);
+//            //Assert.fail("launchGoogleSearchI failed");
+            System.out.println("test");
+        } catch (Exception e) {
+            System.out.println("Caught an exception: " + e);
+        }
+    }
+
+    @Test(groups = { "smoke" })
+    public  void launchGoogleSearchIII() {
+        try {
+            // Search for results
+            driver.get("https://google.co.in");
+            // DOM - document object model
+            Thread.sleep(1000);
+            //Assert.fail("launchGoogleSearchI failed");
+            System.out.println("test");
+        } catch (Exception e) {
+            System.out.println("Caught an exception: " + e);
+        }
+    }
+
+    @Test(groups = { "smoke" })
     public  void launchWikipediaI() {
+        try {
+//            // Search for results
+//            driver.get("https://www.wikipedia.org/");
+//            // DOM - document object model
+//            Thread.sleep(1000);
+
+            System.out.println("Test");
+
+        } catch (Exception e) {
+            System.out.println("Caught an exception: " + e);
+        }
+
+    }
+
+    @Test(groups = { "regression" })
+    public  void launchWikipediaII() {
         try {
             // Search for results
             driver.get("https://www.wikipedia.org/");
             // DOM - document object model
             Thread.sleep(1000);
 
+            System.out.println("Test");
+
         } catch (Exception e) {
             System.out.println("Caught an exception: " + e);
         }
 
     }
 
-    @AfterMethod //@AfterMethod
+    @AfterMethod (alwaysRun = true)
     public void teardown(){
         // Closing the chrome
         driver.close();
