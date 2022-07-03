@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="JBDemo Suite">
-    <test name="Grouping tests">
-        <groups>
-            <run>
-                <include name="regression"/>
-                <include name="smoke"/>
-            </run>
-        </groups>
-        <classes>
-            <class name="qa.tests.SeleniumWithTestNGIntellij"/>
-        </classes>
-    </test>
-  <test name="JBDemo Regression Test">
+<suite name="Cross Browser Suite">
+<!--    <test name="Grouping tests">-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="regression"/>-->
+<!--                <include name="smoke"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="qa.tests.SeleniumWithTestNGIntellij"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+  <test name="Cross Browser Test Demo">
+      <parameter name="browser" value="Edge" />
       <classes>
 <!--      <class name="qa.tests.SeleniumWithTestNGIntellij"/>-->
-<!--      <class name="qa.tests.SeleniumWithTestNGIntellijDuplicate"/>-->
+      <class name="qa.tests.SeleniumAllMethods"/>
       </classes>
   </test> <!-- Test --> 
 </suite> <!-- Suite -->
