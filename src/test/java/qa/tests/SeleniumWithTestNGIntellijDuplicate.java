@@ -21,6 +21,7 @@ public class SeleniumWithTestNGIntellijDuplicate {
     @Test
     public  void launchGoogleSearchII() {
         try {
+           
             // Search for results
             driver.get("https://google.co.in");
             // DOM - document object model

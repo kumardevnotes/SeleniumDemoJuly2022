@@ -13,10 +13,10 @@
 <!--        </classes>-->
 <!--    </test>-->
   <test name="Cross Browser Test Demo">
-      <parameter name="browser" value="Edge" />
+      <parameter name="browser" value="Chrome" />
       <classes>
 <!--      <class name="qa.tests.SeleniumWithTestNGIntellij"/>-->
-      <class name="qa.tests.SeleniumAllMethods"/>
+      <class name="qa.tests.SeleniumDemoCrossBrowsers"/>
       </classes>
   </test> <!-- Test --> 
 </suite> <!-- Suite -->
