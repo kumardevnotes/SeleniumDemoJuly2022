@@ -1,0 +1,27 @@
+
+Interview Preparation:
+
+Manual testing:
+
+1. SDLC process - Agile Scrum (DSM, Sprint planning and retrospective)
+2. Testcases  - positive and negative testcases
+3. Regression testing ? Smoke testing ? Sanity testing ? exploratory testing ?
+4. Bug/Defect life cycle
+5. JIRA - defect management or project management
+6. How to report a bug/defect ?
+7. About your project ? Domain/Business
+
+Automation testing:
+
+1. String programs - revrese a strig without using java inbuilt functions
+2. Find duplicate numbers out of given 2 arrays ex: [1,2,3] and [2,3,4]
+3. print prime numbers btw 1- 100 using java
+4. Selenium locators
+5. different xpath locators
+6. Selenium core methods
+7. Automation framework - Maven project.. we used TestNG+Selenium - data driven framework
+8. java collections basic questions
+9. Java oops, inheritance, polymorphism, abstraction,class, object, interface, access modifiers, non-access modifiers
+10. super, this keywords
+11. testNG annotations and test reports and also testng.xml groupig... parametarization using testng.xml
+12. POM.xml
