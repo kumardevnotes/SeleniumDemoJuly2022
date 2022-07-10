@@ -8,13 +8,14 @@ public class DemoClassChromeDriver implements   DemoInterfaceWebDriver{
         interfaceObj.click();
     }
 
+
     @Override
     public void get(String appUrl) {
-        System.out.println("app "+appUrl + " has been launched");
+
     }
 
     @Override
     public void click() {
-        System.out.println("Login button clicked");
+
     }
 }

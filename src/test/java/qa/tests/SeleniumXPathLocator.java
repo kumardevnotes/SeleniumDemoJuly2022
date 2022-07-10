@@ -7,6 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 public class SeleniumXPathLocator {
     static WebDriver driver;
 
@@ -39,6 +41,17 @@ public class SeleniumXPathLocator {
             System.out.println(myElement.isDisplayed());
 
             Thread.sleep(1000);
+
+            List<WebElement> elementsOnPage  = driver.findElements(By.xpath("//u"));
+            for(WebElement element : elementsOnPage){ //2 elements
+                System.out.println(element.getText());
+            }
+
+//            List<WebElement> anchorTagElements  = driver.findElements(By.xpath("//a"));
+//            for(WebElement element : elementsOnPage){ //2 elements
+//                element.click();
+//            }
+
 
             driver.close();
             driver.quit();

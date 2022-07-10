@@ -16,7 +16,7 @@
       <parameter name="browser" value="Chrome" />
       <classes>
 <!--      <class name="qa.tests.SeleniumWithTestNGIntellij"/>-->
-      <class name="qa.tests.SeleniumXPathLocator"/>
+      <class name="automation.tests.WikipediaTests"/>
       </classes>
   </test> <!-- Test --> 
 </suite> <!-- Suite -->

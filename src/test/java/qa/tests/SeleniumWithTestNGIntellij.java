@@ -7,9 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 
 public class SeleniumWithTestNGIntellij {
-
     WebDriver  driver;
-
     @BeforeMethod (alwaysRun = true)
     public void setup(){
         // Setup chromedriver path and launch chrome
@@ -90,7 +88,6 @@ public class SeleniumWithTestNGIntellij {
         } catch (Exception e) {
             System.out.println("Caught an exception: " + e);
         }
-
     }
 
     @AfterMethod (alwaysRun = true)

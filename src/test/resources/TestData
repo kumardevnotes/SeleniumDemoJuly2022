@@ -1,0 +1,19 @@
+Testcase1:
+1. Launch Wikipedia
+2. verify page title Wikipedia
+3. verify link English on the page
+
+https://www.wikipedia.org/
+Wikipedia
+//a//strong[.='English']/..
+
+Testcas2:
+1. Launch Wikipedia
+2. Enter searck key 'Selenium'
+3. Click on search button
+4. Verify correct search results displayed on the page
+
+searchInput
+//button[@type='submit']
+//text()[.='Selenium']
+
